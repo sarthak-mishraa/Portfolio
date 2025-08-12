@@ -238,6 +238,19 @@ img {
   right: 0;
 }
 
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0; /* top:0, right:0, bottom:0, left:0 */
+    background: transparent;
+    z-index: 2;
+}
+
+
 /*===== HOME =====*/
 .home {
   position: relative;
@@ -1014,4 +1027,28 @@ body.dark .about__container {
     max-width: 200px;
     margin: 0 auto;
   }
+}
+.profile-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* keeps proportions */
+  border-radius: 50%;     /* perfect circle */
+  border: 4px solid #fff; /* optional: clean white border */
+}
+
+.home__img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  /* margin: 0 auto;      centers the image block */
+  display: block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.home__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
