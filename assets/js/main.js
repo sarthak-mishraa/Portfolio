@@ -90,10 +90,9 @@ themeButton.addEventListener('click', () => {
 const typedTexts = [
   "Backend Developer",
   "Java & Spring Boot Specialist",
-  "Data Structures & Algorithms Focused",
-  "Distributed Systems Learner",
-  "Microservices Architecture Enthusiast",
-  "Cloud-Native Application Developer"
+  "Mastering Data Structures & Algorithms",
+  "Scaling with Distributed Systems",
+  "Crafting Microservices"
 ];
 
 const typedSpan = document.getElementById("typed-text");
@@ -147,3 +146,11 @@ const form = document.getElementById('contact-form');
         message.style.color = 'red';
       });
   });
+
+
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
